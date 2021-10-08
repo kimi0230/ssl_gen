@@ -1,0 +1,21 @@
+{
+    "email" kimi0230@gmail.com
+}
+
+
+localhost {
+    reverse_proxy /crwn-clothing/* 127.0.0.1:3000
+	encode gzip
+    file_server
+	log {
+		output file access.log {
+			roll_keep_for 5s
+		}
+	}
+}
+
+localhost:7788 {
+	reverse_proxy /* 127.0.0.1:5566
+	file_server
+}
+
