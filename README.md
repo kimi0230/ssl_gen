@@ -1,8 +1,7 @@
 ## DNS 驗證, 不會auto renew
 ### Gen
-./acme.sh  --issue --standalone --dns   -d www.localhost \
- --yes-I-know-dns-manual-mode-enough-go-ahead-please
+acme.sh  --issue  -d localhost --standalone
 
 ### Renew
-./acme.sh  --renew   -d www.localhost  \
+./acme.sh  --renew   -d localhost  \
   --yes-I-know-dns-manual-mode-enough-go-ahead-please
