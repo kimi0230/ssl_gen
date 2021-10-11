@@ -1,3 +1,7 @@
+
+## Free DNS
+https://my.freenom.com/clientarea.php
+
 ## DNS 驗證, 不會auto renew
 ### Gen
 acme.sh  --issue  -d localhost --standalone
